@@ -271,12 +271,13 @@ main {
   }
   &__icon {
     width: 130px;
-    padding: 16px;
+    padding: 16px 8px;
     display: inline-block;
     text-align: center;
     background: #F9F9F9;
     border-radius: 20px;
     margin-right: 16px;
+    vertical-align: bottom;
     transition: .2s;
     @media screen and (max-width:766px) {
       width: 90px;
@@ -296,7 +297,7 @@ main {
     }
     a {
       color: #676767;
-      font-size: 14px;
+      font-size: 12px;
       font-weight: 600;
       text-align: center;
       transition: .2s;
