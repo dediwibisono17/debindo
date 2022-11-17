@@ -99,22 +99,23 @@
                         <h1 class="title text-center">Login</h1>
                         <div class="message">
                             <div class="form-outline mb-4">
-                                <input type="text" id="name_" class="form-control name">
-                                <label class="form-label" for="name_">Email</label>
+                                <input type="text" id="email" class="form-control name">
+                                <label class="form-label" for="email">Email</label>
                                 <div class="warning font-bold">lala</div>
                             </div>
 
-                            <div class="form-outline mb-4">
-                                <input type="password" id="password" class="form-control name">
-                                <label class="form-label" for="password">Password</label>
+                            <div class="form-outline mb-4" id="show_hide_password">
+                                <input type="password" id="password-login" class="form-control name">
+                                <label class="form-label" for="password-login">Password</label>
+                                <div class="input-group-addon">
+                                    <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                                </div>
                                 <div class="warning font-bold">lala</div>
                             </div>
                         </div>
                         <br>
-                        <button class="btn btn-primary w-100">
-                            <a href="#">
-                                Login
-                            </a>
+                        <button class="btn btn-primary w-100" id="submit-login">
+                            Login
                         </button>
                         <div class="text-center mt-3">
                             <a href="#" class="forgot">Lupa Password</a>
@@ -236,5 +237,6 @@
     <script src="js/slick.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/auth-login.js"></script>
 </body>
 </html>
