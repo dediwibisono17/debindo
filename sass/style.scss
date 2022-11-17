@@ -321,6 +321,13 @@ main {
   }
 }
 
+.highlights {
+  background: #F4F3F9;
+  .image {
+    margin-bottom: 8px;
+  }
+}
+
 .rotate {
   transform: rotate(25deg);
 }
