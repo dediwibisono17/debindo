@@ -18,6 +18,8 @@ $color-yellow: #fec400;
 $color-dark: #19232b;
 $max: 767px;
 
+@import 'login';
+
 .bg {
   &-smooth {
     background-color: #f9fafb;
@@ -859,5 +861,40 @@ footer {
   // box-shadow: 2px 2px 6px #ccc;
   a {
     color: white;
+  }
+}
+
+main {
+  .btn {
+    &-secondary {
+      background: white;
+      
+      a {
+        color: #38734E;
+        font-weight: 600 !important;
+      }
+      border: 1px solid #38734E;
+      &:hover {
+        border: 1px solid #d3d3d3;
+        background: #d3d3d3 !important;
+        a {color: #38734E !important;text-decoration: none;}
+      }
+    }
+    &-primary {
+      background: #38734E;
+      border-color: #38734E;
+      a {
+        color: white;
+        font-weight: 600 !important;
+      }
+      &:hover {
+        background: #49AB48;
+        border-color: #49AB48;
+        a {
+          text-decoration: none;
+        }
+      }
+
+    }
   }
 }
