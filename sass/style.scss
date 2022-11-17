@@ -883,7 +883,7 @@ main {
         font-weight: 600 !important;
       }
       border: 1px solid #38734E;
-      &:hover {
+      &:hover,&:focus {
         border: 1px solid #d3d3d3;
         background: #d3d3d3 !important;
         a {color: #38734E !important;text-decoration: none;}
@@ -896,9 +896,10 @@ main {
         color: white;
         font-weight: 600 !important;
       }
-      &:hover {
+      &:hover,&:focus {
         background: #49AB48;
-        border-color: #49AB48;
+        border-color: #49AB48 !important;
+        box-shadow: none;
         a {
           text-decoration: none;
         }
