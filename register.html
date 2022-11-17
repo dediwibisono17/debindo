@@ -82,54 +82,80 @@
       </header>
     <main>
         
-        <section class="authx">
-            <div class="image">
-                <img src="img/bg-login.png" alt="">
-            </div>
-            <div class="box-auth">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="imagex">
-                            <img src="img/login.png" alt="">
-                        </div>
-                        <br>
-                        <button class="btn btn-secondary w-100"><a href="#">Register to Visit Expo</a></button>
-                    </div>
-                    <div class="col-md-6">
-                        <h1 class="title text-center">Login</h1>
-                        <div class="message">
-                            <div class="form-outline mb-4">
-                                <input type="text" id="name_" class="form-control name">
-                                <label class="form-label" for="name_">Email</label>
-                                <div class="warning font-bold">lala</div>
-                            </div>
-
-                            <div class="form-outline mb-4">
-                                <input type="password" id="password" class="form-control name">
-                                <label class="form-label" for="password">Password</label>
-                                <div class="warning font-bold">lala</div>
-                            </div>
-                        </div>
-                        <br>
-                        <button class="btn btn-primary w-100">
-                            <a href="#">
-                                Login
-                            </a>
-                        </button>
-                        <div class="text-center mt-3">
-                            <a href="#" class="forgot">Lupa Password</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-      
-        
-        <div class="whatsapp-click">
-            <a target="_blank" href="https://api.whatsapp.com/send?phone=628111000737&amp;text=hi%20Rajaampatku">
-              <i class="fa fa-whatsapp " aria-hidden="true"></i>
-            </a>
+    <section class="authx">
+        <div class="image">
+            <img src="img/bg-login.png" alt="">
         </div>
+        <div class="box-auth register">
+            <h1 class="title">Register</h1>
+                <br>
+            <div class="message">
+                <div class="form-outline mb-4">
+                    <select name="domisili" id="domisili" class="form-control select_ city activex">
+                        <option value="mr">Mr</option>
+                        <option value="mrs">Mrs</option>
+                        <option value="ms">Ms</option>
+                    </select>
+                    <label class="form-label" for="name_">Salutation</label>
+                </div>
+                <div class="form-outline mb-4">
+                    <input type="text" id="name_" class="form-control name">
+                    <label class="form-label" for="name_">Nama Lengkap</label>
+                    <div class="warning font-bold">lala</div>
+                </div>
+                <div class="form-outline mb-4">
+                    <input type="text" id="email" class="form-control name">
+                    <label class="form-label" for="email">Email</label>
+                    <div class="warning font-bold">lala</div>
+                </div>
+
+                <div class="form-outline mb-4" id="show_hide_password">
+                    <input type="password" id="password-register" class="form-control name">
+                    <label class="form-label" for="password-register">Password</label>
+                    <div class="input-group-addon">
+                        <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="warning font-bold">lala</div>
+                </div>
+                <div class="form-outline mb-4">
+                    <input type="number" id="no_" class="form-control name">
+                    <label class="form-label" for="no_">No Handphone</label>
+
+                    <div class="warning font-bold">lala</div>
+                </div>
+
+                <div class="form-outline mb-4">
+                    <input type="text" id="alamat" class="form-control name">
+                    <label class="form-label" for="alamat">Alamat Domisili</label>
+                    <div class="warning font-bold">lala</div>
+                </div>
+
+                <div class="form-outline mb-4">
+                    <input type="text" id="alamat" class="form-control name">
+                    <label class="form-label" for="alamat">Alamat Domisili</label>
+                    <div class="warning font-bold">lala</div>
+                </div>
+                
+            </div>
+            <br>
+            <button class="btn btn-primary w-100">
+                <a href="#">
+                    Register
+                </a>
+            </button>
+            <div class="text-center mt-3">
+                <div class="font-medium">Sudah punya akun?</div>
+                <a href="#" class="forgot">Login</a>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="whatsapp-click">
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=628111000737&amp;text=hi%20Rajaampatku">
+            <i class="fa fa-whatsapp " aria-hidden="true"></i>
+        </a>
+    </div>
 
         
     </main>
@@ -236,5 +262,6 @@
     <script src="js/slick.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/auth-register.js"></script>
 </body>
 </html>

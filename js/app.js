@@ -1,8 +1,3 @@
-$(".youtube__img").click(() => {
-  $(".youtube__img").hide();
-  $(".youtube__real").css("display", "block");
-});
-
 $(document).ready(()=>{
   AOS.init({
     duration: 1200,
@@ -48,5 +43,32 @@ $(".slider-hero").slick({
     // instead of a settings object
   ],
 });
+
+
+
+$("#show_hide_password a").on('click', function(event) {
+  event.preventDefault();
+  if($('#show_hide_password input').attr("type") == "text"){
+      $('#show_hide_password input').attr('type', 'password');
+      $('#show_hide_password i').addClass( "fa-eye-slash" );
+      $('#show_hide_password i').removeClass( "fa-eye" );
+  }else if($('#show_hide_password input').attr("type") == "password"){
+      $('#show_hide_password input').attr('type', 'text');
+      $('#show_hide_password i').removeClass( "fa-eye-slash" );
+      $('#show_hide_password i').addClass( "fa-eye" );
+  }
+});
+
+
+$(".form-outline .form-control").keyup(function() {
+  var c = $(this).val();
+  // console.log(c.length<1);
+  if (c.length > 0) {
+      $(this).addClass('activex')
+  } else {
+      $(this).removeClass('activex')
+  }
+})
+
 
 
