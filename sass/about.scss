@@ -167,4 +167,32 @@
             }
         }
     }
+
+    .sponsor {
+        .title {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 14px;
+        }
+        .image {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 8px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+            &_x{
+                width: 100%;
+                height: auto;
+                margin: 16px auto;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
 }
