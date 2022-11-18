@@ -19,6 +19,10 @@
     margin-top: 24px;
     position: relative;
     padding: 32px 0;
+    &.check {
+        min-height: 0;
+        height: 150vh !important;
+    }
     @media screen and (max-width:766px) {
         margin-top: 80px;
     }
@@ -84,8 +88,9 @@
             height: auto;
             top: 50%;
             @media screen and (max-width:766px) {
+                height: auto;
                 h1 {
-                    margin-top: 24px;
+                margin-top: 24px;
                 border-top: 1px dashed transparent;
                 padding-top: 0px;
                 }
@@ -93,7 +98,7 @@
             }
             @media screen and (max-width:766px) {
                 width: 320px;
-                top: 50%;
+                top: 30%;
                 transform: translate(-50%,-40%);
             }
         }
