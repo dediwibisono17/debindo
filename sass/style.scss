@@ -20,6 +20,7 @@ $max: 767px;
 
 @import 'login';
 @import 'about';
+@import 'exhibitor';
 
 .bg {
   &-smooth {
@@ -908,5 +909,22 @@ main {
       }
 
     }
+    &-blue {
+      background: #232659;
+      border-color: #232659;
+      color: white;
+      &:hover,&:focus {
+        background: rgb(119, 112, 47);
+        border-color: rgb(119, 112, 47) !important;
+        box-shadow: none;
+        color: white;
+      }
+    }
+  }
+}
+
+.radius {
+  &-25 {
+    border-radius: 25px;
   }
 }

@@ -1,0 +1,224 @@
+.exhibitor {
+    margin-top: 54px;
+    padding: 0;
+    .bannerx {
+        position: relative;
+        height: 40vh;
+        overflow: hidden;
+        padding: 0;
+        @media screen and (max-width:766px) {
+            height: 35vh;
+        }
+        .image {
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .title {
+            position: absolute;
+            left: 15vw;
+            top: 15vh;
+            color: #B92035;
+            @media screen and (max-width:766px) {
+                top: 8vh;
+            }
+        }
+        .sub {
+            position: absolute;
+            left: 15vw;
+            top: 23vh;
+            font-size: 20px;
+            font-weight: 100;
+            color: #333;
+            @media screen and (min-width:1500px) {
+                top: 20vh;
+            }
+            @media screen and (max-width:766px) {
+                top: 15vh;
+            }
+        }
+        .clear {
+            clear: both;
+        }
+        &__btm {
+            position: absolute;
+            bottom: 10vh;
+            left: 15vw;
+            display: flex;
+            align-items: end;
+            width: 80vw;
+            justify-content: space-between;
+            @media screen and (max-width:766px) {
+                display: block;
+                bottom: 0;
+            }
+            .side {
+                vertical-align: bottom;
+                @media screen and (max-width:766px) {
+                    margin-bottom: 16px;
+                }
+            }
+            h2 {
+                font-size: 20px;
+                font-weight: 200;
+            }
+            .tag-red {
+                background: #B92035;
+                color: white;
+                width: fit-content;
+                padding: 4px 16px;
+                font-size: 14px;
+                font-weight: 600;
+                border-radius: 16px;
+                text-transform: uppercase;
+            }
+            .tupat {
+                height: 250px;
+                color: white;
+                background: #B92035;
+                width: 520px;
+                border-radius: 0 50px 0 50px;
+                display: block;
+                @media screen and (max-width:766px) {
+                    width: auto;
+                }
+                .bgs {
+                    display: inline-block;
+                    color: #B92035;
+                    width: 48%;
+                    height: 100%;
+                    &.foto {
+                        // background: yellow;
+                        // height: 100%;
+                        border-radius: 0 50px 0 0;
+                        width: 51%;
+                        @media screen and (max-width:766px) {
+                            width: 50%;
+                        }
+                        img {
+                            width: 100%;
+                            border-radius: 0 50px 0 0;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .gradient {
+        background: linear-gradient(90deg, #F7E096 0%, #E8B43A 13.02%, #F7E096 100%);
+        height: 60px;
+    }
+
+    .filter {
+        display: block;
+        &__left {
+            display: inline-block;
+            vertical-align: top;
+            width: 20%;
+            background-color: #F4F3F9;
+            padding: 16px;
+            border-radius: 16px;
+            h3 {
+                font-size: 16px;
+                border-bottom: 1px solid;
+                padding-bottom: 8px;
+            }
+            .group {
+                margin: 24px 0;
+                .name {
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+                .form-check-label {
+                    font-size: 13px;
+                }
+            }
+        }
+        &__right {
+            display: inline-block;
+            margin-left: 16px;
+            vertical-align: top;
+            width: 75%;
+            .tablet {
+                // display: block;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                align-content: center;
+                width: fit-content;
+                padding: 0;
+                margin: 0;
+                border: 1px solid #232659;
+                list-style: none;
+                border-radius: 25px;
+                &__list {
+                    padding: 4px 16px;
+                    // display: inline-block;
+                    // width: 30%;
+                    text-align: center;
+                    font-size: 14px;
+                    // background: #E8B43A;
+                    border-right: 1px solid;
+                    a {
+                        color: #232659;
+                    }
+                    &:last-child {
+                        border-radius: 0 25px 25px 0;
+                        border-right: 1px solid transparent;
+                    }
+                    &:first-child {
+                        border-radius: 25px 0 0 25px;
+                    }
+                }
+                .active {
+                    background: #232659;
+                    a {
+                        color: white !important;
+                    }
+                }
+            }
+
+            .abjad {
+                border: 1px solid #3F2359;
+                border-radius: 8px;
+                padding: 8px;
+                margin-top: 8px;
+                a {
+                    color: #000;
+                }
+            }
+
+            .gradients {
+                background: #3F2359;
+                height: 45px;
+                width: 100%;
+                margin: 8px 0;
+                border-radius: 8px;
+            }
+            .product {
+                .bungkus {
+                    padding: 8px;    
+                }
+                &__name {
+                    color: #402359;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+                .induk {
+                    color: #000;
+                    font-size: 14px;
+                }
+                .alamat {
+                    color: #333;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
