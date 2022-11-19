@@ -72,3 +72,22 @@ $(".form-outline .form-control").keyup(function() {
 
 
 
+$('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  infinite:false,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 3,
+  infinite:true,
+  arrows:false,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: true,
+  // centerMode: true,
+  focusOnSelect: true
+});
+

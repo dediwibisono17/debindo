@@ -920,6 +920,18 @@ main {
         color: white;
       }
     }
+    &-trp {
+      background: transparent;
+      color: #232659;
+      border: 1px solid;
+      margin-bottom: 16px;
+      font-weight: 600;
+      transition: .3s;
+      &:hover,&:focus {
+        background: #f9fafb !important;
+        color: #49AB48 !important;
+      }
+    }
   }
 }
 
