@@ -117,6 +117,25 @@
 
     .filter {
         display: block;
+        .floating-help{
+            display: none;
+            @media screen and (max-width:766px) {
+                text-align: center;
+                display: block;
+                background: #d6d6d6;
+                position: fixed;
+                bottom: 8px;
+                transform: translate(50%,0);
+                left: 15%;
+                // font-weight: 600;
+                border-radius: 16px;
+                right: 0;
+                width: fit-content;
+                padding: 8px;
+                z-index: 298;
+            }
+            
+        }
         &__left {
             display: inline-block;
             vertical-align: top;
@@ -124,9 +143,27 @@
             background-color: #F4F3F9;
             padding: 16px;
             border-radius: 16px;
-            @media screen and (max-width:766px) {
-                width: auto;
+            .closex {
                 display: none;
+                @media screen and (max-width:766px) {
+                    display: block;
+                    position: absolute;
+                    right: 16px;
+                    top: 16px;
+                    font-size: 20px;
+                }
+            }
+            @media screen and (max-width:766px) {
+                width: 100%;
+                display: none;
+                position: fixed;
+                overflow-y: scroll;
+                left: 0;
+                right: 0;
+                height: 90%;
+                top: 75px;
+                bottom: 50px;
+                z-index: 299;
             }
             h3 {
                 font-size: 16px;

@@ -15,6 +15,14 @@ $(document).ready(()=>{
 });
 })
 
+$(".floating-help").click(function(){
+  $(".filter__left").fadeIn()
+})
+
+$(".closex").click(function(){
+  $(".filter__left").fadeOut()
+})
+
 $(".slider-hero").slick({
   dots: true,
   infinite: true,
