@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Debindo</title>
     <link rel="stylesheet" href="library/css/bootstrap.min.css">
+    <link rel="stylesheet" href="library/css/select2.min.css">
     <link rel="stylesheet" href="sass/header.css">
     <link rel="stylesheet" href="sass/style.css">
     <link rel="stylesheet" href="sass/font-awesome.min.css">
@@ -45,23 +46,22 @@
               id="navbarCollapse">
               <ul class="navbar-nav w-100 justify-content-center initial_">
                 <li class="nav-item">
-                  <a class="nav-link active goto" href="about.html">About</a>
+                  <a class="nav-link active goto" href="/about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link  goto" href="exhibitor-list.html">Exhibitor List</a>
+                  <a class="nav-link  goto" href="paket.html">Exhibitor List</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  goto" href="paket.html">Conference</a>
+                    <a class="nav-link  goto" href="paket.html">Exhibitor List</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link  goto" href="paket.html">Matchmaking</a>
+                    <a class="nav-link  goto" href="paket.html">Business Forum & Counseling</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link goto dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Trade with Pakistan</a>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">Indonesia to Pakistan</a>
-                      <a class="dropdown-item" href="#">Pakistan to Indonesia</a>
-                    </div>
+                  <li class="nav-item">
+                    <a class="nav-link  goto" href="paket.html">Business Matching</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  goto" href="paket.html">Pride of Indonesia</a>
                   </li>
               </ul>
               <div class="bottom-copy">
@@ -69,7 +69,7 @@
               </div>
               <ul class="nav navbar-nav ml-auto justify-content-end w-top">
                 <li class="nav-item">
-                    <a target="_blank" class="btn btn-third" href="login.html">
+                    <a target="_blank" class="btn btn-third" href="#">
                         <div class="radius_user">
                             <i class="fa fa-user" class="color-softblack" aria-hidden="true"></i>
                         </div>
@@ -82,155 +82,64 @@
         </nav>
       </header>
     <main>
-        <div hidden>
-            <h1>Debindo Trade Expo 2023</h1>
-        </div>
-        <section class="hero">
-            <div class="container">
-                <div class="visitor">
-                    <div class="left-side">
-                        Total Offline Visitor: <b>4209</b>
-                    </div>
-                    <div class="right-side">
-                        GMT Time: <b>11.31 AM</b>
-                    </div>
-                </div>
-                <div class="slider-hero">
-                    <div class="image">
-                        <img src="img/banner.png" alt="">
-                    </div>
-                    
-                </div>
-            </div>
-            
-        </section>
-
         
-        <section class="category">
+    <div class="exhibitor">
+        <section class="bannerx">
+            <div class="image"><img src="img/bg-about.png" alt=""></div>
+            <h1 class="title">Business Matching</h1>
+            <h2 class="sub">Trade Expo Indonesia Hybrid Event 2022</h2>
+        </section>
+        <div class="gradient"></div>
+
+        <div class="business">
             <div class="container">
-                <h3 class="subtitle" data-aos="fade-left">
-                    <b>Select Category</b>
-                </h3>
-                <div class="wrapping">
-                    <div class="category__icon" data-aos="fade-right">
-                        <a href="#">
-                            <div class="image">
-                                <img src="img/category/1.png" alt="">
-                            </div>
-                            <div class="name">Agro & Food</div>
-                        </a>
-                    </div>
-                    <div class="category__icon" data-aos="fade-right">
-                        <a href="#">
-                            <div class="image">
-                                <img src="img/category/2.png" alt="">
-                            </div>
-                            <div class="name">Cosmetics & Jewelry</div>
-                        </a>
-                    </div>
-                    <div class="category__icon" data-aos="fade-right">
-                        <a href="#">
-                            <div class="image">
-                                <img src="img/category/5.png" alt="">
-                            </div>
-                            <div class="name">Leather</div>
-                        </a>
-                    </div>
-                    <div class="category__icon" data-aos="fade-right">
-                        <a href="#">
-                            <div class="image">
-                                <img src="img/category/6.png" alt="">
-                            </div>
-                            <div class="name">Sports Goods</div>
-                        </a>
-                    </div>
-                    <div class="category__icon" data-aos="fade-right">
-                        <a href="#">
-                            <div class="image">
-                                <img src="img/category/4.png" alt="">
-                            </div>
-                            <div class="name">Surgical Instrument</div>
-                        </a>
-                    </div>
-                    <div class="category__icon" data-aos="fade-right">
-                        <a href="#">
-                            <div class="image">
-                                <img src="img/category/7.png" alt="">
-                            </div>
-                            <div class="name">Textile</div>
-                        </a>
-                    </div>
-                    <div class="category__icon" data-aos="fade-right">
-                        <a href="#">
-                            <div class="image">
-                                <img src="img/category/8.png" alt="">
-                            </div>
-                            <div class="name">Other</div>
-                        </a>
-                    </div>
+                <div class="center-table">
+                    <table class="table table table-responsive">
+                        <thead>
+                            <tr>
+                                <th>Exhibitor</th>
+                                <th>Status</th>
+                                <th>Date Time</th>
+                                <th>Request Date</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PT Siantar Top Tbk</td>
+                                <td><div class="color-green">Done</div></td>
+                                <td>10:00 AM</td>
+                                <td>19/10/2023</td>
+                                <td><div class="action">Feedback</div></td>
+                            </tr>
+                            <tr>
+                                <td>PT Siantar Top Tbk</td>
+                                <td><div class="color-yellow">On Progress</div></td>
+                                <td>10:00 AM</td>
+                                <td>19/10/2023</td>
+                                <td><div class="action">Feedback</div></td>
+                            </tr>
+                            <tr>
+                                <td>PT Siantar Top Tbk</td>
+                                <td><div class="color-blue">Accepted</div></td>
+                                <td>10:00 AM</td>
+                                <td>19/10/2023</td>
+                                <td><div class="action">Join</div></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-        </section>
-
-        <section class="contents">
-            <div class="container">
-                <h3 class="subtitle" data-aos="fade-left">
-                    <b>Parallel Activities</b>
-                </h3>
-                <div class="row">
-                    <div class="col-md-8">
-                        <div data-aos="fade-up"><iframe src="https://www.youtube.com/embed/FpRGu4IUszA?autoplay=1&mute=1" autoplay></iframe></div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="image naming" data-aos="fade-left">
-                            <a href="#">
-                                <img src="img/sample.png" alt="">
-                                <div class="naming__text">Business Forum & Counseling</div>
-                            </a>
-                        </div>
-                        <br>
-                        <div class="image naming" data-aos="fade-left">
-                            <a href="#">
-                                <img src="img/sample.png" alt="">
-                                <div class="naming__text">Business Matching</div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="highlights">
-            <div class="container">
-                <h3 class="subtitle" data-aos="fade-left">
-                    <b>Highlights</b>
-                </h3>
-                <div class="row" data-aos="fade-right">
-                    <div class="col-md-4">
-                        <div class="image">
-                            <img src="img/samp-anak.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="image">
-                            <img src="img/samp-bendera.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="image">
-                            <img src="img/samp-orang.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <div class="whatsapp-click">
-            <a target="_blank" href="https://api.whatsapp.com/send?phone=628111000737&amp;text=hi%20Rajaampatku">
-              <i class="fa fa-whatsapp " aria-hidden="true"></i>
-            </a>
         </div>
+
+
+    </div>
+    
+    <div class="whatsapp-click">
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=628111000737&amp;text=hi%20Rajaampatku">
+            <i class="fa fa-whatsapp " aria-hidden="true"></i>
+        </a>
+    </div>
 
         
     </main>
@@ -334,6 +243,7 @@
     </footer>
     <script src="library/js/jquery-3.5.1.min.js"></script>
     <script src="library/js/bootstrap.bundle.min.js"></script>
+    <script src="library/js/select2.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/app.js"></script>

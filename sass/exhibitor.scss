@@ -465,6 +465,55 @@
     .business {
         margin: 16px 0;
         border-radius: 16px;
+        .center-table {
+            margin: 0 auto;
+            display: block;
+            // width: 860px;
+            width: fit-content;
+            table {
+                // border-collapse: separate;
+                // border-spacing: 0;
+                // border-spacing: 1em;
+                // margin: 1rem auto;
+            }
+            tr {
+                margin: 8px;
+                
+            }
+            td {
+                // border: solid 1px #000;
+                // border-style: none solid solid none;
+                padding: 8px 16px;
+                border-radius: 16px;
+                margin: 8px;
+                .status {
+                    .color{
+                        &-green {
+                            color: #38734E;
+                            font-size: 600;
+                        }
+                        &-yellow {
+                            color: #FFA200;
+                            font-size: 600;
+                        }
+                        &-blue {
+                            color: #0D74BB;
+                            font-size: 600;
+                        }
+                    }
+                }
+                &:last-child {
+                    .action {
+                        padding: 0 8px;
+                        border-radius: 25px;
+                        border: 1px solid #232659;
+                        color: #232659;
+                        text-align: center;
+                    }
+
+                }
+            }
+        }
         &__left {
             display: inline-block;
             border-radius: 16px 0 0 16px;
