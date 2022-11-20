@@ -123,5 +123,10 @@ $("#submit-business").click(function(){
   let checked = $("input[name$='matrix-1']:checked");
   let checkedVal = checked.val();
   // var val_date = $(".matrix-1").val()
-  alert(checkedVal)
+
+  var exhibitor = $("#exhibitor_product").val();
+
+  var date_ = $("#select-date").val()
+
+  alert(date_)
 })
