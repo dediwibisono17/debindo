@@ -611,6 +611,15 @@
                             border: 1px solid #38734E;
                             color: #38734E;
                         }
+                        &.disable_ {
+                            background: #a9a9a9;
+                            color: rgb(75, 75, 75);
+                            pointer-events: none;
+                        }
+                        &.active_ {
+                            background: #38734E;
+                            color: white;
+                        }
                     }
                 }
             }
