@@ -1,7 +1,18 @@
 $(document).ready(()=>{
   AOS.init({
     duration: 1200,
-})
+  })
+
+  $('#exhibitor_product').select2({
+    "language": {
+        "noResults": function() {
+            return "<span style=font-family:'Poppins'>Surah tidak ditemukan</span>";
+        }
+    },
+    escapeMarkup: function(markup) {
+        return markup;
+    }
+});
 })
 
 $(".slider-hero").slick({
