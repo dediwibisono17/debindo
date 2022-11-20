@@ -110,3 +110,18 @@ $('.slider-nav').slick({
   focusOnSelect: true
 });
 
+
+
+// radio button
+$('main input').click(function() {
+  $('main input:not(:checked)').prev().removeClass("active_");
+  $('main input:checked').prev().addClass("active_");
+});
+
+
+$("#submit-business").click(function(){
+  let checked = $("input[name$='matrix-1']:checked");
+  let checkedVal = checked.val();
+  // var val_date = $(".matrix-1").val()
+  alert(checkedVal)
+})
