@@ -21,6 +21,7 @@ $max: 767px;
 @import 'login';
 @import 'about';
 @import 'exhibitor';
+@import 'myprofile';
 
 .bg {
   &-smooth {
@@ -245,6 +246,12 @@ main {
   height: 24px;
   background: #d4d4d4;
   border-radius: 50%;
+}
+
+.islogin {
+  .btn-third {
+    width: 200px;
+  }  
 }
 .btn-third {
   font-size: 12px;

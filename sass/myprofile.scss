@@ -1,0 +1,118 @@
+.my-profile {
+    margin-top: 54px;
+    padding: 0;
+    .bannerx {
+        position: relative;
+        height: 40vh;
+        overflow: hidden;
+        padding: 0;
+        @media screen and (max-width:766px) {
+            height: 35vh;
+        }
+        .image {
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .title {
+            position: absolute;
+            left: 15vw;
+            top: 15vh;
+            color: #B92035;
+            @media screen and (max-width:766px) {
+                top: 0vh;
+            }
+        }
+        .sub {
+            position: absolute;
+            left: 15vw;
+            top: 23vh;
+            font-size: 20px;
+            font-weight: 100;
+            color: #333;
+            @media screen and (min-width:1500px) {
+                top: 20vh;
+            }
+            @media screen and (max-width:766px) {
+                top: 15vh;
+            }
+        }
+        .clear {
+            clear: both;
+        }
+        &__btm {
+            position: absolute;
+            bottom: 10vh;
+            left: 15vw;
+            display: flex;
+            align-items: end;
+            width: 80vw;
+            justify-content: space-between;
+            @media screen and (max-width:766px) {
+                display: block;
+                bottom: 0;
+            }
+            .side {
+                vertical-align: bottom;
+                @media screen and (max-width:766px) {
+                    margin-bottom: 16px;
+                }
+            }
+            h2 {
+                font-size: 20px;
+                font-weight: 200;
+            }
+            .tag-red {
+                background: #B92035;
+                color: white;
+                width: fit-content;
+                padding: 4px 16px;
+                font-size: 14px;
+                font-weight: 600;
+                border-radius: 16px;
+                text-transform: uppercase;
+            }
+            .tupat {
+                height: 250px;
+                color: white;
+                background: #B92035;
+                width: 520px;
+                border-radius: 0 50px 0 50px;
+                display: block;
+                @media screen and (max-width:766px) {
+                    width: auto;
+                }
+                .bgs {
+                    display: inline-block;
+                    color: #B92035;
+                    width: 48%;
+                    height: 100%;
+                    &.foto {
+                        // background: yellow;
+                        // height: 100%;
+                        border-radius: 0 50px 0 0;
+                        width: 51%;
+                        @media screen and (max-width:766px) {
+                            width: 50%;
+                        }
+                        img {
+                            width: 100%;
+                            border-radius: 0 50px 0 0;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .gradient {
+        // background: linear-gradient(90deg, #F7E096 0%, #E8B43A 13.02%, #F7E096 100%);
+        height: 60px;
+        background: #38734E;
+    }
+}
