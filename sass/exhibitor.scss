@@ -688,4 +688,19 @@
             }
         }
     }
+
+    .conference {
+        .card {
+            padding: 8px;
+            margin: 16px 0;
+            border-color: transparent;
+            background: #EEEEEE;
+            .time {
+                font-size: 14px;
+            }
+            .btn-trp {
+                padding: 4px !important;
+            }
+        }
+    }
 }
