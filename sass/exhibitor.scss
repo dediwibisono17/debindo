@@ -23,7 +23,7 @@
             top: 15vh;
             color: #B92035;
             @media screen and (max-width:766px) {
-                top: 8vh;
+                top: 0vh;
             }
         }
         .sub {
@@ -280,6 +280,9 @@
                     width: 50%;
                     margin-left: 16px;
                     vertical-align: middle;
+                    @media screen and (max-width:766px) {
+                        margin-left: 4px;
+                    }
                     .name {
                         color: #402359;
                         font-weight: 700;
@@ -465,6 +468,9 @@
     .business {
         margin: 16px 0;
         border-radius: 16px;
+        @media screen and (max-width:766px) {
+            overflow-x: auto;
+        }
         .center-table {
             margin: 0 auto;
             display: block;
@@ -529,6 +535,7 @@
             }
             h4,h3,i {
                 color: #fff;
+                font-weight: 100;
                 font-size: 18px;
                 width: 60%;
                 margin: 0 auto;

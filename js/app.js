@@ -6,7 +6,7 @@ $(document).ready(()=>{
   $('#exhibitor_product').select2({
     "language": {
         "noResults": function() {
-            return "<span style=font-family:'Poppins'>Surah tidak ditemukan</span>";
+            return "<span>Data tidak ditemukan</span>";
         }
     },
     escapeMarkup: function(markup) {
