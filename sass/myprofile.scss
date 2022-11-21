@@ -124,6 +124,9 @@
         &__list {
             display: inline-block;
             margin: 0 4px;
+            @media screen and (max-width:766px) {
+                margin: 8px 4px;
+            }
             border: 1px solid #38734E;
             padding: 4px 8px;
             border-radius: 16px;
@@ -145,6 +148,19 @@
         margin: 16px;
         padding: 32px;
         background: #F4F3F9;
+        .ops {
+            th{
+                &:first-child {
+                    width: 30%;
+                }
+                &:nth-child(2) {
+                    width: 30%;
+                }
+                &:last-child {
+                    width: 40%;
+                }
+            }
+        }
         table {
             td {
                 &:first-child {
