@@ -471,16 +471,21 @@
         @media screen and (max-width:766px) {
             overflow-x: auto;
         }
-        .center-table {
-            margin: 0 auto;
-            display: block;
-            // width: 860px;
-            width: fit-content;
+        // .center-table {
+        //     margin: 0 auto;
+        //     display: block;
+        //     // width: 860px;
+        //     width: fit-content;
             table {
                 // border-collapse: separate;
                 // border-spacing: 0;
                 // border-spacing: 1em;
                 // margin: 1rem auto;
+                th {
+                    &:last-child {
+                        text-align: center;
+                    }
+                }
             }
             tr {
                 margin: 8px;
@@ -518,7 +523,7 @@
                     }
 
                 }
-            }
+            // }
         }
         &__left {
             display: inline-block;
