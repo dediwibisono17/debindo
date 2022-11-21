@@ -66,7 +66,8 @@ $('main input').click(function() {
   
   // console.log(date_.length < 1);
       if (exhibitor.length > 0 && exhibitor2.length > 0 && date_.length > 0 && checkedVal !=undefined) {
-        alert("Berhasil")
+        alert("Berhasil");
+        window.location.href= "business-matching-confirmation.html"
       }
     
   })
