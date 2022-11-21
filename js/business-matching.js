@@ -9,6 +9,17 @@ $(document).ready(function(){
         return markup;
     }
 });
+
+$('#exhibitor_product2').select2({
+  "language": {
+      "noResults": function() {
+          return "<span>Data tidak ditemukan</span>";
+      }
+  },
+  escapeMarkup: function(markup) {
+      return markup;
+  }
+});
 })
 
 // radio button
@@ -36,6 +47,14 @@ $('main input').click(function() {
     } else {
         $("#select-date").next().next().removeClass('show');
     }
+
+    var exhibitor2 = $("#exhibitor_product2").val();
+      if (exhibitor2.length < 1) {
+          $("#exhibitor_product2").next().next().next().addClass('show').text('Please select Product');
+          $("#exhibitor_product2").focus()
+      } else {
+          $("#exhibitor_product2").next().next().next().removeClass('show');
+      }
   
     var exhibitor = $("#exhibitor_product").val();
       if (exhibitor.length < 1) {
@@ -46,7 +65,7 @@ $('main input').click(function() {
       }
   
   // console.log(date_.length < 1);
-      if (exhibitor.length > 0 && date_.length > 0 && checkedVal !=undefined) {
+      if (exhibitor.length > 0 && exhibitor2.length > 0 && date_.length > 0 && checkedVal !=undefined) {
         alert("Berhasil")
       }
     
