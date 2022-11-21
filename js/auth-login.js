@@ -13,6 +13,7 @@
 
     if (regEmail.test(emailVal) && (reg.test(pwdVal) || car.test(pwdVal) && length_ > 7) ) {
         alert("berhasil login")
+        window.location.href = "my-profile.html"
     } else {
         alert("email atau password salah")
     }
