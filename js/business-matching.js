@@ -1,4 +1,15 @@
-
+$(document).ready(function(){
+  $('#exhibitor_product').select2({
+    "language": {
+        "noResults": function() {
+            return "<span>Data tidak ditemukan</span>";
+        }
+    },
+    escapeMarkup: function(markup) {
+        return markup;
+    }
+});
+})
 
 // radio button
 $('main input').click(function() {
