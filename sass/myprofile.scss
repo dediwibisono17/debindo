@@ -115,4 +115,42 @@
         height: 60px;
         background: #38734E;
     }
+
+    .menunya {
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+        text-align: center;
+        &__list {
+            display: inline-block;
+            margin: 0 4px;
+            border: 1px solid #38734E;
+            padding: 4px 8px;
+            border-radius: 16px;
+            &.activex {
+                background: #38734E !important;
+                a {
+                    color: white !important;
+                }
+
+            }
+            a {
+                color: #38734E;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .bg-cek {
+        margin: 16px;
+        padding: 32px;
+        background: #F4F3F9;
+        table {
+            td {
+                &:first-child {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
 }
