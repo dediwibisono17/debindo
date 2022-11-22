@@ -956,13 +956,42 @@ main {
   }
 }
 
+.isdesktop {
+  display: block !important;
+  @media screen and (max-width:766px) {
+    display: none !important;
+  }
+}
+
 .isrelative{
     position: relative;
+    @media screen and (max-width:766px) {
+      position: absolute;
+      bottom: 30vh;
+    }
   .notif {
       position: absolute;
       right: -24px;
       top: 8px;
       cursor: pointer;
+      @media screen and (max-width:766px) {
+        display: none;
+      }
+      a {
+        color: #000000 !important;
+      }
+      .dropdown-toggle{
+        &::after {
+          content: none;
+        }
+      }
+      .dropdown-menu {
+        left: -56px;
+      }
+      .dropdown-item {
+        font-size: 10px;
+
+      }
       i {
         font-size: 20px;
       }

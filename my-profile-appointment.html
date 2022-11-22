@@ -76,21 +76,24 @@
               &copy; 2023 Debindo
               </div>
               <ul class="nav navbar-nav ml-auto justify-content-end w-top isrelative">
-                <!-- <li class="nav-item">
-                    <a target="_blank" class="btn btn-third" href="login.html">
-                        <div class="radius_user">
-                            <i class="fa fa-user" class="color-softblack" aria-hidden="true"></i>
-                        </div>
-                        Login
-                    </a>
-                </li> -->
-
                 <!-- is login user -->
-                <li class="nav-item notif">
-                    <div class="angka">99</div>
-                    <i class="fa fa-bell"></i>
+                
+                <li class="nav-item notif dropdown islogin">
+                    
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <div class="angka">99</div>
+                        <i class="fa fa-bell"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Notification 1</a>
+                        
+                        <a class="dropdown-item" href="#">Notification 2</a>
+                        <a class="dropdown-item" href="#">Notification 3</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="my-profile-appointment.html">See All</a>
+                    </div>
                 </li>
-                <li class="nav-item dropdown islogin">
+                <li class="nav-item dropdown isdesktop islogin">
                     <a class="btn btn-third dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                         <div class="radius_user">
                             <i class="fa fa-user" class="color-softblack" aria-hidden="true"></i>
@@ -105,6 +108,9 @@
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Logout</a>
                     </div>
+                </li>
+                <li class="islogin ismobile">
+                    <a href="my-profile.html" class="btn btn-third ">My Profile</a>
                 </li>
               </ul>
             </div>
