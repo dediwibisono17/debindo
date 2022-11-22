@@ -199,7 +199,7 @@
                 width: fit-content;
                 padding: 0;
                 margin: 0;
-                border: 1px solid #232659;
+                border: 1px solid #38734E;
                 list-style: none;
                 border-radius: 25px;
                 &__list {
@@ -211,7 +211,7 @@
                     // background: #E8B43A;
                     border-right: 1px solid;
                     a {
-                        color: #232659;
+                        color: #38734E;
                     }
                     &:last-child {
                         border-radius: 0 25px 25px 0;
@@ -222,7 +222,7 @@
                     }
                 }
                 .active {
-                    background: #232659;
+                    background: #38734E;
                     a {
                         color: white !important;
                     }
@@ -377,7 +377,7 @@
                 margin-right: 4px;
             }
             .fa-map-marker {
-                color: #232659 !important;
+                color: #38734E !important;
             }
         }
         .desc {
@@ -517,8 +517,8 @@
                     .action {
                         padding: 0 8px;
                         border-radius: 25px;
-                        border: 1px solid #232659;
-                        color: #232659;
+                        border: 1px solid #38734E;
+                        color: #38734E;
                         text-align: center;
                     }
 
@@ -783,7 +783,7 @@
             background-color: white;
             transform: translate(-50%,-50%);
             &-box {
-                border: 1px solid #232659;
+                border: 1px solid #38734E;
                 // background: white;
                 margin: 8px 0;
                 padding: 8px;
