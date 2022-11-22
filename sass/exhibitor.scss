@@ -896,3 +896,20 @@
         font-size: 14px;
     }
 }
+
+.searchingx {
+    position: relative;
+    input {
+        padding-right: 62px;
+        &:hover,&:active,&:focus {
+            box-shadow: none;
+            outline: 0;
+            border: 1px solid #38734E;
+        }
+    }
+    button {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
