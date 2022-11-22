@@ -75,14 +75,36 @@
               <div class="bottom-copy">
               &copy; 2023 Debindo
               </div>
-              <ul class="nav navbar-nav ml-auto justify-content-end w-top">
-                <li class="nav-item">
+              <ul class="nav navbar-nav ml-auto justify-content-end w-top isrelative">
+                <!-- <li class="nav-item">
                     <a target="_blank" class="btn btn-third" href="login.html">
                         <div class="radius_user">
                             <i class="fa fa-user" class="color-softblack" aria-hidden="true"></i>
                         </div>
                         Login
                     </a>
+                </li> -->
+
+                <!-- is login user -->
+                <li class="nav-item notif">
+                    <div class="angka">99</div>
+                    <i class="fa fa-bell"></i>
+                </li>
+                <li class="nav-item dropdown islogin">
+                    <a class="btn btn-third dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <div class="radius_user">
+                            <i class="fa fa-user" class="color-softblack" aria-hidden="true"></i>
+                        </div>
+                        Username User
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">My Profile</a>
+                        
+                        <a class="dropdown-item" href="#">QR Code</a>
+                        <a class="dropdown-item" href="#">My Appointment</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
                 </li>
               </ul>
             </div>
