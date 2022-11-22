@@ -1,6 +1,9 @@
 .about {
     margin-top: 54px;
     padding: 0;
+    @media screen and (max-width:766px) {
+        margin-top: 36px;
+    }
     .bannerx {
         position: relative;
         height: 70vh;
