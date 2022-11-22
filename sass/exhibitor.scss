@@ -533,6 +533,9 @@
             text-align: center;
             // background: linear-gradient(90deg, #F7E096 0%, #E8B43A 13.02%, #F7E096 100%);
             background: #38734E;
+            @media screen and (max-width:766px) {
+                display: none;
+            }
             h2 {
                 color: #fff;
                 font-size: 24px;
@@ -554,6 +557,9 @@
             vertical-align: top;
             background: #F4F3F9;
             padding: 16px;
+            @media screen and (max-width:766px) {
+                width: 100%;
+            }
             h2 {
                 color: #333;
                 text-align: center;
