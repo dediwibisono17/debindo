@@ -695,6 +695,8 @@
     }
 
     .conference {
+        padding: 0;
+        position: relative;
         .card {
             padding: 8px;
             margin: 16px 0;
@@ -705,6 +707,96 @@
             }
             .btn-trp {
                 padding: 4px !important;
+            }
+        }
+
+        .click{
+            position: absolute;
+            border: 1px solid;
+            border-radius: 25px;
+            padding: 8px;
+            &:hover {
+                border: 1px solid #38734E;
+            }
+            a {
+                color: #000;
+                &:hover {
+                    text-decoration: none;
+                    color: #38734E;
+                }
+            }
+            &-one {
+                top: 42%;
+                left:8%;
+                @media screen and (max-width:766px) {
+                    top: initial;
+                    bottom: 10px;
+                    left: 50%;
+                    transform: translate(-50%,0%);
+                    background: #38734E;
+                    color: white;
+                }
+                a {
+                    @media screen and (max-width:766px) {
+                        color: #d6d6d6;
+                    }
+                }
+            }
+            &-two {
+                top: 42%;
+                right: 8%;
+                @media screen and (max-width:766px) {
+                    display: none;
+                }
+            }
+        }
+        .cek-date {
+            position: absolute;
+            left: 50%;
+            top: 10%;
+            transform: translate(-50%,-50%);
+            .form-group {
+                display: block;
+            }
+        }
+        .tv {
+            width: 420px;
+            margin: 0 auto;
+            border-radius: 16px;
+            padding: 8px 16px;
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            @media screen and (max-width:766px) {
+                width: 95%;
+            }
+            background-color: white;
+            transform: translate(-50%,-50%);
+            &-box {
+                border: 1px solid #232659;
+                // background: white;
+                margin: 8px 0;
+                padding: 8px;
+                border-radius: 8px;
+            }
+        }
+
+        .image {
+            &__wow {
+                width: 100%;
+                height: 100%;
+                @media screen and (max-width:766px) {
+                    // display: none;
+                    height: 70vh;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    @media screen and (max-width:766px) {
+                        object-fit: cover;
+                    }
+                }
             }
         }
     }
@@ -787,3 +879,4 @@
         }
     }     
 }
+
