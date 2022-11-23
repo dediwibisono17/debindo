@@ -788,6 +788,9 @@ footer {
             small {
               font-size: 11px;
               text-transform: uppercase;
+              @media screen and (min-width:1900px) {
+                font-size: 14px;
+              }
             }
           }
           img {
