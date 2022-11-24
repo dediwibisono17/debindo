@@ -4,7 +4,19 @@ $("#name_").on('input', function() {
     var nameVal = $(this).val();
     if (!regName.test(nameVal)) {
         if (nameVal.length < 6) {
-            $(this).next().next().addClass('show').text('Nama minimal 6 Huruf')
+            $(this).next().next().addClass('show').text('Minimal 6 letters')
+        }
+    } else {
+        $(this).next().next().removeClass('show');
+    }
+});
+
+$("#address").on('input', function() {
+    var regName = /^[a-zA-Z ]{6,30}$/;
+    var nameVal = $(this).val();
+    if (!regName.test(nameVal)) {
+        if (nameVal.length < 6) {
+            $(this).next().next().addClass('show').text('Minimal 6 letters')
         }
     } else {
         $(this).next().next().removeClass('show');
@@ -15,7 +27,7 @@ $("#email").on('input', function() {
     var regEmail =  /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
     var emailVal = $(this).val();
     if (!regEmail.test(emailVal)) {
-        $(this).next().next().addClass('show').text('Format email salah')
+        $(this).next().next().addClass('show').text('Wrong Format')
     } else {
         $(this).next().next().removeClass('show');
     }
@@ -35,16 +47,16 @@ $("#email").on('input', function() {
     $(".sisa").text(length_)
         // console.log(car.test(pwdVal));
     if (length_ < 8) {
-        $(this).next().next().next().addClass('show').text('Password minimal 8 karakter & mengandung gabungan huruf dan angka');
+        $(this).next().next().next().addClass('show').text('Minimal 8 letters and 1 number ');
         if (!reg.test(pwdVal) || !car.test(pwdVal)) {
-            $(this).next().next().next().addClass('show').text('Password minimal 8 karakter & mengandung gabungan huruf dan angka');
+            $(this).next().next().next().addClass('show').text('Minimal 8 letters and 1 number ');
         }
     } else {
         if (length_ > 7 && reg.test(pwdVal) || car.test(pwdVal)) {
             $(this).next().next().next().removeClass('show');
             // console.log('betul?');
         } else {
-            $("#password-register").next().next().next().addClass('show').text('Password minimal 8 karakter & mengandung gabungan huruf dan angka');
+            $("#password-register").next().next().next().addClass('show').text('Minimal 8 letters and 1 number ');
             // $("#password-register").focus();
             // alert('salah semua')
             //console.log('salah semua');
@@ -57,12 +69,12 @@ $("#email").on('input', function() {
     var handphone = /^[0-9]{11,13}$/;
     if (!handphone.test(valHP)) {
         if (valHP.length < 10 && valHP.length >= 1) {
-            $(this).next().next().addClass('show').text('Nomor Handphone minimal 10');
+            $(this).next().next().addClass('show').text('Minimal 10 digits');
             $(this).next().next().hide();
         } else if (valHP.length > 13) {
-            $(this).next().next().addClass('show').text('Nomor Handphone maksimal 13');
+            $(this).next().next().addClass('show').text('Maximal 13 digits');
         } else if (valHP.length < 1) {
-            $(this).next().next().addClass('show').text('Nomor Handphone belum diisi');
+            $(this).next().next().addClass('show').text('Empty Field');
         }
     } else {
         $(this).next().next().removeClass('show');
@@ -72,19 +84,27 @@ $("#email").on('input', function() {
 
 
   $("#submit-register").click(function(){
+    let checked = $("input[name$='category']:checked");
+    let checkedVal = checked.val();
+    if (checkedVal == undefined) {
+      $(".form-check-label").parent().parent().prev().addClass('show').text('Please select category')
+    } else {
+      $(".form-check-label").parent().parent().prev().removeClass('show')
+    }
+
     //no hp
     var valHP = $("#no_").val();
     var handphone = /^[0-9]{11,13}$/;
     if (!handphone.test(valHP)) {
         if (valHP.length < 10 && valHP.length >= 1) {
-            $("#no_").next().next().addClass('show').text('Nomor Handphone minimal 10');
+            $("#no_").next().next().addClass('show').text('Minimal 10 digits');
             $("#no_").next().next().hide();
             $("#no_").focus()
         } else if (valHP.length > 13) {
-            $("#no_").next().next().addClass('show').text('Nomor Handphone maksimal 13');
+            $("#no_").next().next().addClass('show').text('Maximal 13 digits');
             $("#no_").focus()
         } else if (valHP.length < 1) {
-            $("#no_").next().next().addClass('show').text('Nomor Handphone belum diisi');
+            $("#no_").next().next().addClass('show').text('Empty Field');
             $("#no_").focus()
         }
     } else {
@@ -100,10 +120,10 @@ $("#email").on('input', function() {
     $(".sisa").text(length_)
         // console.log(car.test(pwdVal));
     if (length_ < 8) {
-        $("#password-register").next().next().next().addClass('show').text('Password minimal 8 karakter & mengandung gabungan huruf dan angka');
+        $("#password-register").next().next().next().addClass('show').text('Minimal 8 letters and 1 number ');
         $("#password-register").focus()
         if (!reg.test(pwdVal) || !car.test(pwdVal)) {
-            $("#password-register").next().next().next().addClass('show').text('Password minimal 8 karakter & mengandung gabungan huruf dan angka');
+            $("#password-register").next().next().next().addClass('show').text('Minimal 8 letters and 1 number ');
             $("#password-register").focus()
         }
     } else {
@@ -111,7 +131,7 @@ $("#email").on('input', function() {
             $("#password-register").next().next().next().removeClass('show');
             // console.log('betul?');
         } else {
-            $("#password-register").next().next().next().addClass('show').text('Password minimal 8 karakter & mengandung gabungan huruf dan angka');
+            $("#password-register").next().next().next().addClass('show').text('Minimal 8 letters and 1 number ');
             $("#password-register").focus()
         }
     }
@@ -120,10 +140,22 @@ $("#email").on('input', function() {
     var regEmail =  /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
     var emailVal = $("#email").val();
     if (!regEmail.test(emailVal)) {
-        $("#email").next().next().addClass('show').text('Format email salah')
+        $("#email").next().next().addClass('show').text('Wrong Format')
         $("#email").focus();
     } else {
         $("#email").next().next().removeClass('show');
+    }
+
+    //address
+    var regName = /^[a-zA-Z ]{6,30}$/;
+    var nameVal = $("#address").val();
+    if (!regName.test(nameVal)) {
+        if (nameVal.length < 6) {
+            $("#address").next().next().addClass('show').text('Minimal 6 letters');
+            $("#address").focus()
+        }
+    } else {
+        $("#address").next().next().removeClass('show');
     }
     
     //nama
@@ -131,7 +163,7 @@ $("#email").on('input', function() {
     var nameVal = $("#name_").val();
     if (!regName.test(nameVal)) {
         if (nameVal.length < 6) {
-            $("#name_").next().next().addClass('show').text('Nama minimal 6 Karakter');
+            $("#name_").next().next().addClass('show').text('Minimal 6 letters');
             $("#name_").focus()
         }
     } else {
@@ -140,7 +172,22 @@ $("#email").on('input', function() {
 
     
 
-    if (regName.test(nameVal) && regEmail.test(emailVal) && handphone.test(valHP) && (reg.test(pwdVal) || car.test(pwdVal) && length_ > 7) ) {
-        alert("berhasil Register")
+    if (regName.test(nameVal) && regEmail.test(emailVal) && handphone.test(valHP) && (reg.test(pwdVal) || car.test(pwdVal) && length_ > 7) && checkedVal !=undefined) {
+        alert("berhasil Register");
+        window.location.href="my-profile.html"
     }
   })
+
+
+  $(document).ready(function(){
+    $('#country').select2({
+      "language": {
+          "noResults": function() {
+              return "<span>Country Not Found</span>";
+          }
+      },
+      escapeMarkup: function(markup) {
+          return markup;
+      }
+  })
+})
