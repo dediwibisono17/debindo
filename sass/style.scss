@@ -284,10 +284,14 @@ main {
   }
   &.ones {
     background: #38734E;
+    .radius_user{
+      background: white;
+    }
     color: white;
     margin-left: 16px;
     i {
-      color: #000;
+      background: white;
+      color: #38734E;
     }
     @media screen and (max-width:766px) {
       position: absolute;
