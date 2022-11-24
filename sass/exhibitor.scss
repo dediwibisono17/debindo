@@ -829,6 +829,24 @@
         .d-block {
             margin-bottom: 16px;
         }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+                &:last-child {
+                    margin-top: 24px;
+                    padding-top: 24px;
+                    border-top: 1px solid #B92035;
+                    .contact__icon {
+                        background-color: #273c9d;
+                    }
+                    // i {
+                    //     color: #fcd300; color debindo
+                    // }
+                }
+            }
+        }
         &__icon {
             display: inline-block;
             width: 64px;
