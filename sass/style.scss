@@ -112,6 +112,9 @@ td {
 }
 
 .color {
+  &-reds {
+    color: red;
+  }
   &-red {
     color: $color-primary;
   }
