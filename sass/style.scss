@@ -23,6 +23,13 @@ $max: 767px;
 @import 'exhibitor';
 @import 'myprofile';
 
+.navbar-nav .dropdown-menu {
+  @media screen and (max-width:766px) {
+    position: absolute;  
+  }
+  
+}
+
 .bg {
   &-smooth {
     background-color: #f9fafb;
@@ -256,6 +263,12 @@ main {
   height: 24px;
   background: #d4d4d4;
   border-radius: 50%;
+}
+
+.fotox {
+  .slick-prev::before,.slick-next::before{
+    color: #38734E;
+  }
 }
 
 .islogin {
